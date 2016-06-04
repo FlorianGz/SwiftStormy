@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368ED9E01D02EBB0006370D6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ED9DF1D02EBB0006370D6 /* LocationManager.swift */; };
+		36996CF71CF895A7002438DE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CF61CF895A7002438DE /* Weather.swift */; };
+		36996CF91CF89C28002438DE /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CF81CF89C28002438DE /* Forecast.swift */; };
+		36996CFC1CF89E19002438DE /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CFB1CF89E19002438DE /* ForecastData.swift */; };
+		36996CFF1CF9C369002438DE /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CFE1CF9C369002438DE /* WeatherRouter.swift */; };
+		36996D011CF9C379002438DE /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996D001CF9C379002438DE /* WeatherService.swift */; };
+		36996D031CF9C966002438DE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996D021CF9C966002438DE /* Router.swift */; };
+		36996D0C1CFA038F002438DE /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996D0B1CFA038F002438DE /* WeatherManager.swift */; };
 		36A355FB1CF8910700030E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A355FA1CF8910700030E9A /* AppDelegate.swift */; };
-		36A355FD1CF8910700030E9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A355FC1CF8910700030E9A /* ViewController.swift */; };
+		36A355FD1CF8910700030E9A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A355FC1CF8910700030E9A /* WeatherViewController.swift */; };
 		36A356001CF8910700030E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A355FE1CF8910700030E9A /* Main.storyboard */; };
 		36A356031CF8910700030E9A /* SwiftStormy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36A356011CF8910700030E9A /* SwiftStormy.xcdatamodeld */; };
 		36A356051CF8910700030E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A356041CF8910700030E9A /* Assets.xcassets */; };
 		36A356081CF8910700030E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A356061CF8910700030E9A /* LaunchScreen.storyboard */; };
+		36BCE0A71D004DF300E1B946 /* WeatherDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BCE0A61D004DF300E1B946 /* WeatherDatasource.swift */; };
+		36BEACE61CFCCDDC0045B385 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BEACE51CFCCDDC0045B385 /* WeatherCell.swift */; };
+		64532026BC0D1653B98EDA40 /* Pods_SwiftStormy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39997D26C52F606EA96808A9 /* Pods_SwiftStormy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10AA7EBF35F5046BE09E4960 /* Pods-SwiftStormy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStormy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStormy/Pods-SwiftStormy.debug.xcconfig"; sourceTree = "<group>"; };
+		368ED9DF1D02EBB0006370D6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		36996CF61CF895A7002438DE /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		36996CF81CF89C28002438DE /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		36996CFB1CF89E19002438DE /* ForecastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
+		36996CFE1CF9C369002438DE /* WeatherRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
+		36996D001CF9C379002438DE /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		36996D021CF9C966002438DE /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		36996D0B1CFA038F002438DE /* WeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		36A355F71CF8910700030E9A /* SwiftStormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A355FA1CF8910700030E9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36A355FC1CF8910700030E9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36A355FC1CF8910700030E9A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		36A355FF1CF8910700030E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36A356021CF8910700030E9A /* SwiftStormy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftStormy.xcdatamodel; sourceTree = "<group>"; };
 		36A356041CF8910700030E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36A356071CF8910700030E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36A356091CF8910700030E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BCE0A61D004DF300E1B946 /* WeatherDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDatasource.swift; sourceTree = "<group>"; };
+		36BEACE51CFCCDDC0045B385 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		39997D26C52F606EA96808A9 /* Pods_SwiftStormy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStormy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5B2E16CCA67ADAF3B5B640 /* Pods-SwiftStormy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStormy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStormy/Pods-SwiftStormy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64532026BC0D1653B98EDA40 /* Pods_SwiftStormy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AE50520242EC7ECA44077A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39997D26C52F606EA96808A9 /* Pods_SwiftStormy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36996CF51CF8954D002438DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36996CF61CF895A7002438DE /* Weather.swift */,
+				36996CF81CF89C28002438DE /* Forecast.swift */,
+				36996CFB1CF89E19002438DE /* ForecastData.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		36996CFD1CF9C348002438DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36996CFE1CF9C369002438DE /* WeatherRouter.swift */,
+				36996D001CF9C379002438DE /* WeatherService.swift */,
+				36996D021CF9C966002438DE /* Router.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		36996D081CFA032E002438DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				36996D091CFA033D002438DE /* Weather */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		36996D091CFA033D002438DE /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				36A355FC1CF8910700030E9A /* WeatherViewController.swift */,
+				36BEACE51CFCCDDC0045B385 /* WeatherCell.swift */,
+				36BCE0A61D004DF300E1B946 /* WeatherDatasource.swift */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		36996D0A1CFA0380002438DE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				36996D0B1CFA038F002438DE /* WeatherManager.swift */,
+				368ED9DF1D02EBB0006370D6 /* LocationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		36A355EE1CF8910700030E9A = {
 			isa = PBXGroup;
 			children = (
 				36A355F91CF8910700030E9A /* SwiftStormy */,
 				36A355F81CF8910700030E9A /* Products */,
+				58CE661E3EE676BF987D6635 /* Pods */,
+				1AE50520242EC7ECA44077A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +138,11 @@
 		36A355F91CF8910700030E9A /* SwiftStormy */ = {
 			isa = PBXGroup;
 			children = (
+				36996D0A1CFA0380002438DE /* Managers */,
+				36996D081CFA032E002438DE /* UI */,
+				36996CFD1CF9C348002438DE /* Services */,
+				36996CF51CF8954D002438DE /* Models */,
 				36A355FA1CF8910700030E9A /* AppDelegate.swift */,
-				36A355FC1CF8910700030E9A /* ViewController.swift */,
 				36A355FE1CF8910700030E9A /* Main.storyboard */,
 				36A356041CF8910700030E9A /* Assets.xcassets */,
 				36A356061CF8910700030E9A /* LaunchScreen.storyboard */,
@@ -67,6 +152,15 @@
 			path = SwiftStormy;
 			sourceTree = "<group>";
 		};
+		58CE661E3EE676BF987D6635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10AA7EBF35F5046BE09E4960 /* Pods-SwiftStormy.debug.xcconfig */,
+				3C5B2E16CCA67ADAF3B5B640 /* Pods-SwiftStormy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36A3560C1CF8910700030E9A /* Build configuration list for PBXNativeTarget "SwiftStormy" */;
 			buildPhases = (
+				F93B891ABC3DDAB760A30746 /* 📦 Check Pods Manifest.lock */,
 				36A355F31CF8910700030E9A /* Sources */,
 				36A355F41CF8910700030E9A /* Frameworks */,
 				36A355F51CF8910700030E9A /* Resources */,
+				58F55BC310D65394381427E8 /* 📦 Embed Pods Frameworks */,
+				A2B5D3634D00E766013BE1C6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +230,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58F55BC310D65394381427E8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftStormy/Pods-SwiftStormy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B5D3634D00E766013BE1C6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftStormy/Pods-SwiftStormy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93B891ABC3DDAB760A30746 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36A355F31CF8910700030E9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36996D011CF9C379002438DE /* WeatherService.swift in Sources */,
 				36A356031CF8910700030E9A /* SwiftStormy.xcdatamodeld in Sources */,
-				36A355FD1CF8910700030E9A /* ViewController.swift in Sources */,
+				36A355FD1CF8910700030E9A /* WeatherViewController.swift in Sources */,
 				36A355FB1CF8910700030E9A /* AppDelegate.swift in Sources */,
+				36996D031CF9C966002438DE /* Router.swift in Sources */,
+				36BEACE61CFCCDDC0045B385 /* WeatherCell.swift in Sources */,
+				36996D0C1CFA038F002438DE /* WeatherManager.swift in Sources */,
+				36996CFF1CF9C369002438DE /* WeatherRouter.swift in Sources */,
+				36996CF71CF895A7002438DE /* Weather.swift in Sources */,
+				36BCE0A71D004DF300E1B946 /* WeatherDatasource.swift in Sources */,
+				36996CFC1CF89E19002438DE /* ForecastData.swift in Sources */,
+				36996CF91CF89C28002438DE /* Forecast.swift in Sources */,
+				368ED9E01D02EBB0006370D6 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +408,7 @@
 		};
 		36A3560D1CF8910700030E9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AA7EBF35F5046BE09E4960 /* Pods-SwiftStormy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftStormy/Info.plist;
@@ -264,6 +420,7 @@
 		};
 		36A3560E1CF8910700030E9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5B2E16CCA67ADAF3B5B640 /* Pods-SwiftStormy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftStormy/Info.plist;
@@ -292,6 +449,7 @@
 				36A3560E1CF8910700030E9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
