@@ -73,21 +73,21 @@
 		36996CF51CF8954D002438DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				36996CF61CF895A7002438DE /* Weather.swift */,
 				36996CF81CF89C28002438DE /* Forecast.swift */,
 				36996CFB1CF89E19002438DE /* ForecastData.swift */,
+				36996CF61CF895A7002438DE /* Weather.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		36996CFD1CF9C348002438DE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				36996D021CF9C966002438DE /* Router.swift */,
 				36996CFE1CF9C369002438DE /* WeatherRouter.swift */,
 				36996D001CF9C379002438DE /* WeatherService.swift */,
-				36996D021CF9C966002438DE /* Router.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		36996D081CFA032E002438DE /* UI */ = {
@@ -95,35 +95,35 @@
 			children = (
 				36996D091CFA033D002438DE /* Weather */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		36996D091CFA033D002438DE /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				36A355FC1CF8910700030E9A /* WeatherViewController.swift */,
 				36BEACE51CFCCDDC0045B385 /* WeatherCell.swift */,
 				36BCE0A61D004DF300E1B946 /* WeatherDatasource.swift */,
+				36A355FC1CF8910700030E9A /* WeatherViewController.swift */,
 			);
-			name = Weather;
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		36996D0A1CFA0380002438DE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				36996D0B1CFA038F002438DE /* WeatherManager.swift */,
 				368ED9DF1D02EBB0006370D6 /* LocationManager.swift */,
+				36996D0B1CFA038F002438DE /* WeatherManager.swift */,
 			);
-			name = Managers;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		36A355EE1CF8910700030E9A = {
 			isa = PBXGroup;
 			children = (
-				36A355F91CF8910700030E9A /* SwiftStormy */,
-				36A355F81CF8910700030E9A /* Products */,
-				58CE661E3EE676BF987D6635 /* Pods */,
 				1AE50520242EC7ECA44077A1 /* Frameworks */,
+				58CE661E3EE676BF987D6635 /* Pods */,
+				36A355F81CF8910700030E9A /* Products */,
+				36A355F91CF8910700030E9A /* SwiftStormy */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,14 +139,14 @@
 			isa = PBXGroup;
 			children = (
 				36996D0A1CFA0380002438DE /* Managers */,
-				36996D081CFA032E002438DE /* UI */,
-				36996CFD1CF9C348002438DE /* Services */,
 				36996CF51CF8954D002438DE /* Models */,
+				36996CFD1CF9C348002438DE /* Services */,
+				36996D081CFA032E002438DE /* UI */,
 				36A355FA1CF8910700030E9A /* AppDelegate.swift */,
-				36A355FE1CF8910700030E9A /* Main.storyboard */,
 				36A356041CF8910700030E9A /* Assets.xcassets */,
-				36A356061CF8910700030E9A /* LaunchScreen.storyboard */,
 				36A356091CF8910700030E9A /* Info.plist */,
+				36A356061CF8910700030E9A /* LaunchScreen.storyboard */,
+				36A355FE1CF8910700030E9A /* Main.storyboard */,
 				36A356011CF8910700030E9A /* SwiftStormy.xcdatamodeld */,
 			);
 			path = SwiftStormy;
@@ -308,6 +308,7 @@
 				36A355FF1CF8910700030E9A /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		36A356061CF8910700030E9A /* LaunchScreen.storyboard */ = {
@@ -316,6 +317,7 @@
 				36A356071CF8910700030E9A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
