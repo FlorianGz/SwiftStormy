@@ -25,7 +25,7 @@ class WeatherDatasource: NSObject, UITableViewDataSource {
         if let dailyForecastData = weather.daily?.data {
             let currentData = dailyForecastData[indexPath.row]
             cell.summary?.text = currentData.summary ?? ""
-            cell.time?.text = currentData.getFormattedDate()
+            cell.time?.text = DateHelper.getFormattedDate(currentData.time)
             if let currentIcon = currentData.icon {
                 cell.icon.image = UIImage(named: currentIcon)
             }

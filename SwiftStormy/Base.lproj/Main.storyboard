@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hpe-rB-FHi">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="85" id="4jV-WG-Ian" customClass="WeatherCell" customModule="SwiftStormy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="85"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4jV-WG-Ian" id="uWd-3f-6Nh">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="84.5"/>
@@ -76,6 +76,7 @@
                                             <outlet property="summary" destination="NAT-Dl-YBF" id="Igv-9F-bOO"/>
                                             <outlet property="temperature" destination="4ug-z6-zJ1" id="aG7-lc-zJd"/>
                                             <outlet property="time" destination="BBQ-T1-BuN" id="xMR-9n-jTV"/>
+                                            <segue destination="jXO-hc-VLa" kind="show" identifier="weatherSegue" id="IjC-24-nxY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -89,13 +90,157 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kZ6-B1-TvM" secondAttribute="bottom" id="ysX-57-eeY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AUC-i7-tQz"/>
                     <connections>
                         <outlet property="tableView" destination="kZ6-B1-TvM" id="VBT-n6-nfT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146" y="63"/>
+            <point key="canvasLocation" x="318" y="-227"/>
+        </scene>
+        <!--Weather Item View Controller-->
+        <scene sceneID="O0A-5O-bLK">
+            <objects>
+                <viewController id="jXO-hc-VLa" customClass="WeatherItemViewController" customModule="SwiftStormy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zeq-dW-mXb"/>
+                        <viewControllerLayoutGuide type="bottom" id="LdY-Ll-grC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gBO-DX-jTI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="73P-1H-yHw">
+                                <rect key="frame" x="260" y="81" width="500" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aY-e5-zyp">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T2-ae-hBf">
+                                        <rect key="frame" x="0.0" y="42" width="500" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="18°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uev-ex-3A9">
+                                        <rect key="frame" x="0.0" y="66" width="500" height="69"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SYS-fy-WHz">
+                                <rect key="frame" x="20" y="261" width="101" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Humidity : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rq-4X-zLt">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sunrise : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhU-Wx-I3Z">
+                                        <rect key="frame" x="0.0" y="21" width="71" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sunset : " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijy-yL-dqr">
+                                        <rect key="frame" x="0.0" y="41" width="67" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ozone : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIJ-Sr-CfI">
+                                        <rect key="frame" x="0.0" y="62" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pressure : " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyt-bd-M1i">
+                                        <rect key="frame" x="0.0" y="82" width="81" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Windspeed : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7M-lF-Gln">
+                                        <rect key="frame" x="0.0" y="103" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="73P-1H-yHw" firstAttribute="leading" secondItem="gBO-DX-jTI" secondAttribute="leadingMargin" constant="30" id="0qE-uO-2Ep"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="SYS-fy-WHz" secondAttribute="leading" id="EQt-92-fdR"/>
+                            <constraint firstItem="73P-1H-yHw" firstAttribute="top" secondItem="zeq-dW-mXb" secondAttribute="bottom" constant="23" id="S35-x8-trg"/>
+                            <constraint firstItem="73P-1H-yHw" firstAttribute="centerX" secondItem="gBO-DX-jTI" secondAttribute="centerX" id="SGc-2w-UAk"/>
+                            <constraint firstItem="SYS-fy-WHz" firstAttribute="top" secondItem="uev-ex-3A9" secondAttribute="bottom" constant="45" id="aBF-JP-ehm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="73P-1H-yHw" secondAttribute="trailing" constant="30" id="hqt-ju-2Tx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5MX-k8-o7m"/>
+                    <connections>
+                        <outlet property="city" destination="9aY-e5-zyp" id="Szt-Oa-4pP"/>
+                        <outlet property="humidity" destination="0Rq-4X-zLt" id="T60-Kn-zUD"/>
+                        <outlet property="ozone" destination="vIJ-Sr-CfI" id="JB7-YA-9TF"/>
+                        <outlet property="pressure" destination="Hyt-bd-M1i" id="sE2-Br-VKq"/>
+                        <outlet property="summary" destination="5T2-ae-hBf" id="f64-PT-hrv"/>
+                        <outlet property="sunrise" destination="NhU-Wx-I3Z" id="zxE-cj-uVT"/>
+                        <outlet property="sunset" destination="ijy-yL-dqr" id="dTl-tH-9au"/>
+                        <outlet property="temperature" destination="uev-ex-3A9" id="UoP-Vm-KLR"/>
+                        <outlet property="windspeed" destination="X7M-lF-Gln" id="wtQ-Mh-1dc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpT-bD-SS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="-98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pQR-f5-mq0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNq-Uu-tO9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8My-I6-mrO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jXO-hc-VLa" kind="relationship" relationship="rootViewController" id="D4v-yq-U3l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dae-Md-UxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ozs-E7-u1o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hpe-rB-FHi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S3Q-0N-1xa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9sd-Hl-hxW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LA-zs-cID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="-227"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IjC-24-nxY"/>
+    </inferredMetricsTieBreakers>
 </document>

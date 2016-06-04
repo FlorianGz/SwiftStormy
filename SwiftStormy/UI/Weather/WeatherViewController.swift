@@ -40,8 +40,9 @@ class WeatherViewController: UIViewController, UITableViewDelegate {
     }
     
     //Click on a daily forecast info
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        //TODO
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("cell clicked \(indexPath.row)")
+        //performSegueWithIdentifier("weatherSegue", sender: self)
     }
     
     //Pull to refresh method
@@ -54,6 +55,15 @@ class WeatherViewController: UIViewController, UITableViewDelegate {
         dataSource.weather = weather
         tableView.reloadData()
         refreshControl.endRefreshing()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "weatherSegue" {
+            let destController = segue.destinationViewController as! WeatherItemViewController,
+            forecastIndex = tableView.indexPathForSelectedRow?.row
+            destController.currentForecast = (dataSource.weather.daily?.data![forecastIndex!])!
+            destController.cityName = dataSource.weather.timezone!
+        }
     }
 }
 

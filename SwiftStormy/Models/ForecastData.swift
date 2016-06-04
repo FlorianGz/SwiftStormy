@@ -14,13 +14,16 @@ class ForecastData: Mappable {
     var time:Double=0.0
     var summary:String?
     var icon:String?
-    var sunriseTime:String?
-    var sunsetTime:String?
+    var sunriseTime:Double?
+    var sunsetTime:Double?
     var precipIntensity:Int?
     var precipProbability:Int?
     var temperatureMin: Double?
     var temperatureMax:Double?
     var humidity:Double?
+    var ozone:Double?
+    var windSpeed:Double?
+    var pressure:Double?
     
     
     required init?(_ map: Map) {
@@ -30,20 +33,16 @@ class ForecastData: Mappable {
         time <- map["time"]
         summary <- map["summary"]
         icon <- map["icon"]
-        sunsetTime <- map["sunriseTime"]
+        sunriseTime <- map["sunriseTime"]
         sunsetTime <- map["sunsetTime"]
         precipIntensity <- map["precipIntensity"]
         precipProbability <- map["precipProbability"]
         temperatureMin <- map["temperatureMin"]
         temperatureMax <- map["temperatureMax"]
         humidity <- map["humidity"]
-    }
-    
-    func getFormattedDate() -> String {
-        let currentDate = NSDate(timeIntervalSince1970: time)
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        return formatter.stringFromDate(currentDate)
+        ozone <- map["ozone"]
+        windSpeed <- map["windSpeed"]
+        pressure <- map["pressure"]
     }
     
     func getCelciusTemperature() -> Int? {
