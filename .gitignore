@@ -1,0 +1,18 @@
+# OS X temporary files that should never be committed
+.DS_Store
+*.swp
+*.lock
+*.orig
+
+# Xcode build files
+DerivedData/
+build/
+
+# XCode user data / Exclude personal Xcode user settings
+*.pbxuser
+*.mode?v?
+*.perspectivev?
+*.xcuserstate
+*.xccheckout
+*.xcuserdatad
+xcuserdata

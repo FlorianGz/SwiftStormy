@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		368ED9E01D02EBB0006370D6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ED9DF1D02EBB0006370D6 /* LocationManager.swift */; };
+		368ED9E21D030D6B006370D6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 368ED9E11D030D6B006370D6 /* .gitignore */; };
 		36996CF71CF895A7002438DE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CF61CF895A7002438DE /* Weather.swift */; };
 		36996CF91CF89C28002438DE /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CF81CF89C28002438DE /* Forecast.swift */; };
 		36996CFC1CF89E19002438DE /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36996CFB1CF89E19002438DE /* ForecastData.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		10AA7EBF35F5046BE09E4960 /* Pods-SwiftStormy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStormy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStormy/Pods-SwiftStormy.debug.xcconfig"; sourceTree = "<group>"; };
 		368ED9DF1D02EBB0006370D6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		368ED9E11D030D6B006370D6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		36996CF61CF895A7002438DE /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		36996CF81CF89C28002438DE /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		36996CFB1CF89E19002438DE /* ForecastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		36A355EE1CF8910700030E9A = {
 			isa = PBXGroup;
 			children = (
+				368ED9E11D030D6B006370D6 /* .gitignore */,
 				1AE50520242EC7ECA44077A1 /* Frameworks */,
 				58CE661E3EE676BF987D6635 /* Pods */,
 				36A355F81CF8910700030E9A /* Products */,
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368ED9E21D030D6B006370D6 /* .gitignore in Resources */,
 				36A356081CF8910700030E9A /* LaunchScreen.storyboard in Resources */,
 				36A356051CF8910700030E9A /* Assets.xcassets in Resources */,
 				36A356001CF8910700030E9A /* Main.storyboard in Resources */,

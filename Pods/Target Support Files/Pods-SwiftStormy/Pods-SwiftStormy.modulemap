@@ -1,0 +1,6 @@
+framework module Pods_SwiftStormy {
+  umbrella header "Pods-SwiftStormy-umbrella.h"
+
+  export *
+  module * { export * }
+}
